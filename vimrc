@@ -23,3 +23,7 @@ set ttyfast
 set lazyredraw
 
 syntax enable
+
+" Apply vimrc once it stored
+autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
