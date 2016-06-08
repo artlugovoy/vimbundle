@@ -24,6 +24,16 @@ set lazyredraw
 
 syntax enable
 
-" Apply vimrc once it stored
+" Read platform specific configrations
+if filereadable(expand("$HOME/") . '.macos.vim')
+  source ~/.macos.vim
+endif
+
+if filereadable(expand("$HOME/") . '.linux.vim')
+  source ~/.linux.vim
+endif
+
+
+" Apply vimrc once it is stored
 autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost vimrc source %
