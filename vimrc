@@ -9,4 +9,10 @@ filetype plugin indent on
 let mapleader = ","
 let g:mapleader = ","
 
+set history = 1000
 
+set nobackup
+set nowritebackup
+set noswapfile
+
+syntax enable
