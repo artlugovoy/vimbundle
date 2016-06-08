@@ -80,6 +80,17 @@ au InsertEnter * hi statusline term=reverse ctermfg=42 ctermbg=Black guifg=#3cb3
 au InsertLeave * hi statusline term=reverse ctermfg=Grey ctermbg=Black guifg=Grey  guibg=Black
 
 
+" Mappings
+imap jk <ESC>
+
+" searching mappings
+nnoremap / /\v
+vnoremap / /\v
+nnoremap <leader><space> :noh<cr> 
+nmap <space> /
+map <c-space> ?
+
+
 " Read platform specific configrations
 if filereadable(expand("$HOME/") . '.macos.vim')
   source ~/.macos.vim
