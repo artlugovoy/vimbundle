@@ -9,10 +9,17 @@ filetype plugin indent on
 let mapleader = ","
 let g:mapleader = ","
 
-set history = 1000
+set history=1000
 
+" Disable swapping
 set nobackup
 set nowritebackup
 set noswapfile
+set autoread
+
+
+" speed up syntax highlighting
+set ttyfast
+set lazyredraw
 
 syntax enable
