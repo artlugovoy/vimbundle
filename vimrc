@@ -1,6 +1,6 @@
 set syntax=vimt nocompatible
 
-"  Plugins
+" Load Vundle Plugins
 silent! runtime bundle.vim
 
 " Autoindent by file type
@@ -57,8 +57,14 @@ set formatoptions=n
 " Display whitespaces
 set list listchars=tab:»·,trail:·,nbsp:·
 
-" Status Line
+" Searching options
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
 
+" Status Line
 " path
 set statusline=%f
 " flags
