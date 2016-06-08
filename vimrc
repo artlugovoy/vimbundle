@@ -17,6 +17,10 @@ set nowritebackup
 set noswapfile
 set autoread
 
+" Undo settings
+set backupdir=~/tmp,/tmp
+set undodir=~/.vim/.tmp,~/tmp,~/.tmp,/tmp
+
 syntax enable
 
 " speed up syntax highlighting
