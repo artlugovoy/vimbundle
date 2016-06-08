@@ -89,6 +89,9 @@ vnoremap / /\v
 nnoremap <leader><space> :noh<cr> 
 nmap <space> /
 map <c-space> ?
+" Center screen when scrolling search results
+nmap n nzz
+nmap N Nzz
 
 " splits mappings
 nmap <leader>sh <C-w>h
@@ -96,10 +99,9 @@ nmap <leader>sj <C-w>j
 nmap <leader>sk <C-w>k
 nmap <leader>sl <C-w>l
 
-
-" Center screen when scrolling search results
-nmap n nzz
-nmap N Nzz
+" buffer mappings
+nmap <leader>d :bd<CR>
+nmap <leader>D :bufdo bd<CR>
 
 
 " Read platform specific configrations
