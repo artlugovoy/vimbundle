@@ -107,6 +107,11 @@ nmap <leader>sl <C-w>l
 nmap <leader>d :bd<CR>
 nmap <leader>D :bufdo bd<CR>
 
+" Saving and exit mappings
+nmap <leader>q :wqa!<CR>
+nmap <leader>w :w!<CR>
+nmap <leader><Esc> :q!<CR>
+
 
 " Read platform specific configrations
 if filereadable(expand("$HOME/") . '.macos.vim')
