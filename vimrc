@@ -112,6 +112,9 @@ nmap <leader>q :wqa!<CR>
 nmap <leader>w :w!<CR>
 nmap <leader><Esc> :q!<CR>
 
+" System Buffer Copy Paste
+map <leader>bc "+yy
+map <leader>bp "+p
 
 " Read platform specific configrations
 if filereadable(expand("$HOME/") . '.macos.vim')
