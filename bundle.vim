@@ -11,5 +11,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'w0ng/vim-hybrid'
+
 call vundle#end()
 filetype plugin indent on
