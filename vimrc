@@ -57,6 +57,22 @@ set formatoptions=n
 " Display whitespaces
 set list listchars=tab:»·,trail:·,nbsp:·
 
+" Status Line
+
+" path
+set statusline=%f
+" flags
+set statusline+=%m%r%h%w
+" encoding
+set statusline+=\ [%{strlen(&fenc)?&fenc:&enc}]
+" line x of y
+set statusline+=\ [line\ %l\/%L\ column\ %c]
+
+" Change colour of statusline in insert mode
+hi statusline ctermfg=Black ctermbg=White
+au InsertEnter * hi statusline term=reverse ctermfg=42 ctermbg=Black guifg=#3cb371 guibg=Black
+au InsertLeave * hi statusline term=reverse ctermfg=Grey ctermbg=Black guifg=Grey  guibg=Black
+
 
 " Read platform specific configrations
 if filereadable(expand("$HOME/") . '.macos.vim')
