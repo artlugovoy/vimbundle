@@ -40,6 +40,22 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
+set t_Co=256
+colorscheme hybrid
+set splitbelow splitright
+
+" Formatting
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set nowrap
+set textwidth=80
+autocmd FileType ruby setlocal colorcolumn=81
+set formatoptions=n
+
+" Display whitespaces
+set list listchars=tab:»·,trail:·,nbsp:·
 
 
 " Read platform specific configrations
