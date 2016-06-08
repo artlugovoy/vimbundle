@@ -80,7 +80,7 @@ au InsertEnter * hi statusline term=reverse ctermfg=42 ctermbg=Black guifg=#3cb3
 au InsertLeave * hi statusline term=reverse ctermfg=Grey ctermbg=Black guifg=Grey  guibg=Black
 
 
-" Mappings
+" Basic mappings
 imap jk <ESC>
 
 " searching mappings
@@ -89,6 +89,17 @@ vnoremap / /\v
 nnoremap <leader><space> :noh<cr> 
 nmap <space> /
 map <c-space> ?
+
+" splits mappings
+nmap <leader>sh <C-w>h
+nmap <leader>sj <C-w>j
+nmap <leader>sk <C-w>k
+nmap <leader>sl <C-w>l
+
+
+" Center screen when scrolling search results
+nmap n nzz
+nmap N Nzz
 
 
 " Read platform specific configrations
