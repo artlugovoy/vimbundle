@@ -97,6 +97,13 @@ hi statusline ctermfg=Black ctermbg=White
 au InsertEnter * hi statusline term=reverse ctermfg=42 ctermbg=Black guifg=#3cb371 guibg=Black
 au InsertLeave * hi statusline term=reverse ctermfg=Grey ctermbg=Black guifg=Grey  guibg=Black
 
+" Set wildignore
+set wildignore+=*/tmp/*
+set wildignore+=*/vendor/*
+set wildignore=.svn,CVS,.git,*.swp,*.jpg,*.png,*.gif,*.pdf,*.bak,*.orig
+" Set a lower priority for .old files
+set suffixes+=.old
+
 " Set sivler searcher as a grep tool
 set grepprg=ag\ --nogroup\ --nocolor
 let g:grep_cmd_opts = '--line-numbers --noheading'
