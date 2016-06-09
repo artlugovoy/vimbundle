@@ -83,6 +83,12 @@ hi statusline ctermfg=Black ctermbg=White
 au InsertEnter * hi statusline term=reverse ctermfg=42 ctermbg=Black guifg=#3cb371 guibg=Black
 au InsertLeave * hi statusline term=reverse ctermfg=Grey ctermbg=Black guifg=Grey  guibg=Black
 
+" Set sivler searcher as a grep tool
+set grepprg=ag\ --nogroup\ --nocolor
+let g:grep_cmd_opts = '--line-numbers --noheading'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
+
 " CtrlP plugin options
 let g:ctrlp_cmd = 'CtrlPMixed'
 
@@ -110,6 +116,10 @@ vnoremap / /\v
 nnoremap <leader><space> :noh<cr> 
 nmap <space> /
 map <c-space> ?
+
+" ,a to Ack (search in files)
+nnoremap <leader>a :Ag 
+
 " Center screen when scrolling search results
 nmap n nzz
 nmap N Nzz

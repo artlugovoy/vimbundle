@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'scrooloose/syntastic'
-
+Plugin 'rking/ag.vim.git'
 Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
