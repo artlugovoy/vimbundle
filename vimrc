@@ -165,6 +165,10 @@ nmap <leader><Esc> :q!<CR>
 map <leader>bc "+yy
 map <leader>bp "+p
 
+" Git blame mappings
+nmap <Leader>gb :Gblame<CR>
+vmap <Leader>gb :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
+
 " CtrlP bindings
 map <leader>f :CtrlPMixed<cr>
 let g:ctrlp_map = '<Leader>f'

@@ -21,6 +21,8 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 
+Plugin 'tpope/vim-fugitive'
+
 Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
