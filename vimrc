@@ -68,6 +68,9 @@ set incsearch
 set showmatch
 set hlsearch
 
+" Set shell
+set shell=$SHELL
+
 " Status Line
 " path
 set statusline=%f
@@ -90,7 +93,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
 " CtrlP plugin options
-let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_cmd = 'CtrlP :pwd'
 
 " AutoClose plugin options
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
@@ -149,10 +152,10 @@ map <leader>f :CtrlPMixed<cr>
 let g:ctrlp_map = '<Leader>f'
 
 " Read custom configuration
-if filereadable(expand("$HOME/") . '.local.vimrc')
-  source ~/.local.vimrc
+let home_path = expand("$HOME/")
+if filereadable(home_path . '.vimrc.local')
+  source ~/.vimrc.local
 endif
-
 
 " Apply vimrc once it is stored
 autocmd! bufwritepost .vimrc source %
