@@ -83,6 +83,19 @@ hi statusline ctermfg=Black ctermbg=White
 au InsertEnter * hi statusline term=reverse ctermfg=42 ctermbg=Black guifg=#3cb371 guibg=Black
 au InsertLeave * hi statusline term=reverse ctermfg=Grey ctermbg=Black guifg=Grey  guibg=Black
 
+" CtrlP plugin options
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\.git$\|\.hg$\|\.svn$\|node_modules',
+      \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\|\.DS_Store',
+      \ 'link': 'some_bad_symbolic_links',
+      \ }
+let g:ctrlp_max_files = 0
+let g:ctrlp_extensions = ['ctrlp-filetpe']
+let g:ctrlp_follow_symlinks = 1
+
 
 " Basic mappings
 imap jk <ESC>
@@ -116,6 +129,10 @@ nmap <leader><Esc> :q!<CR>
 " System Buffer Copy Paste
 map <leader>bc "+yy
 map <leader>bp "+p
+
+" CtrlP bindings
+map <leader>f :CtrlPMixed<cr>
+let g:ctrlp_map = '<Leader>f'
 
 " Read custom configuration
 if filereadable(expand("$HOME/") . '.local.vimrc')

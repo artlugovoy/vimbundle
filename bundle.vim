@@ -10,6 +10,7 @@ set rtp+=~/.vim/bundle/Vundle
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'w0ng/vim-hybrid'
 
