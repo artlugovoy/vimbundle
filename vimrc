@@ -86,6 +86,10 @@ au InsertLeave * hi statusline term=reverse ctermfg=Grey ctermbg=Black guifg=Gre
 " CtrlP plugin options
 let g:ctrlp_cmd = 'CtrlPMixed'
 
+" AutoClose plugin options
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
+let g:AutoCloseProtectedRegions = ["Character"] 
+
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = {
       \ 'dir':  '\.git$\|\.hg$\|\.svn$\|node_modules',

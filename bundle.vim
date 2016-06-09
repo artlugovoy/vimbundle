@@ -11,6 +11,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Townk/vim-autoclose'
 
 Plugin 'w0ng/vim-hybrid'
 
