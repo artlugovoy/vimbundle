@@ -102,6 +102,7 @@ nmap <leader>sh <C-w>h
 nmap <leader>sj <C-w>j
 nmap <leader>sk <C-w>k
 nmap <leader>sl <C-w>l
+nnoremap <leader>vl :vs<cr>
 
 " buffer mappings
 nmap <leader>d :bd<CR>
@@ -116,13 +117,9 @@ nmap <leader><Esc> :q!<CR>
 map <leader>bc "+yy
 map <leader>bp "+p
 
-" Read platform specific configrations
-if filereadable(expand("$HOME/") . '.macos.vim')
-  source ~/.macos.vim
-endif
-
-if filereadable(expand("$HOME/") . '.linux.vim')
-  source ~/.linux.vim
+" Read custom configuration
+if filereadable(expand("$HOME/") . '.local.vimrc')
+  source ~/.local.vimrc
 endif
 
 
