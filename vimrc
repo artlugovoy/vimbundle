@@ -158,8 +158,12 @@ nmap <leader>D :bufdo bd<CR>
 
 " Saving and exit mappings
 nmap <leader>q :wqa!<CR>
+nmap <leader>sq :q<CR>
 nmap <leader>w :w!<CR>
 nmap <leader><Esc> :q!<CR>
+
+" Change current project directory
+execute 'map <leader>gp :cd ' . $HOME . '/projects/'
 
 " System Buffer Copy Paste
 map <leader>bc "+yy
