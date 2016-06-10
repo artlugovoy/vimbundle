@@ -137,6 +137,11 @@ let g:ctrlp_max_files = 0
 let g:ctrlp_extensions = ['ctrlp-filetpe']
 let g:ctrlp_follow_symlinks = 1
 
+" Rspec plugin options
+let g:rspec_command = 'call VimuxRunCommand("rspec {spec}\n")'
+
+" Vimux plugin options
+let g:VimuxRunnerType = "window"
 
 " Basic mappings
 imap jk <ESC>
@@ -190,6 +195,11 @@ let g:ctrlp_map = '<Leader>f'
 " NERDTree plugin key bindings
 map <leader>n :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
+
+" Rspec binding
+nnoremap <leader>rr :A<CR>
+nnoremap <leader>rn :call RunNearestSpec()<CR>
+nnoremap <leader>rf :call RunCurrentSpecFile()<CR>
 
 " Read custom configuration
 let home_path = expand("$HOME/")

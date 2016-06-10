@@ -22,6 +22,9 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 
+Plugin 'thoughtbot/vim-rspec.git'
+Plugin 'benmills/vimux.git'
+
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
