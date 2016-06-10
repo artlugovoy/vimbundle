@@ -176,6 +176,9 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
 
+" mapping to switch between last two buffers
+nnoremap <leader><leader> <c-^>
+
 " Saving and exit mappings
 nmap <leader>q :wqa!<CR>
 nmap <leader>sq :q<CR>
