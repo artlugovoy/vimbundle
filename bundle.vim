@@ -14,6 +14,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'rking/ag.vim.git'
 Plugin 'Townk/vim-autoclose'
+Plugin 'tpope/vim-endwise'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'vim-ruby/vim-ruby'
