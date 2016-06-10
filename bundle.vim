@@ -22,6 +22,8 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'w0ng/vim-hybrid'
 
