@@ -113,6 +113,16 @@ let g:ctrlp_use_caching = 0
 " CtrlP plugin options
 let g:ctrlp_cmd = 'CtrlP :pwd'
 
+" NERDTree plugin options
+let NERDTreeShowBookmarks = 0
+let NERDChristmasTree = 1
+let NERDTreeWinPos = "right"
+let NERDTreeHijackNetrw = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeWinSize = 60 
+let NERDTreeChDirMode = 2
+let NERDTreeDirArrows = 1
+
 " AutoClose plugin options
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
 let g:AutoCloseProtectedRegions = ["Character"] 
@@ -176,6 +186,10 @@ vmap <Leader>gb :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("
 " CtrlP bindings
 map <leader>f :CtrlPMixed<cr>
 let g:ctrlp_map = '<Leader>f'
+
+" NERDTree plugin key bindings
+map <leader>n :NERDTreeToggle<cr>
+map <leader>nf :NERDTreeFind<cr>
 
 " Read custom configuration
 let home_path = expand("$HOME/")
