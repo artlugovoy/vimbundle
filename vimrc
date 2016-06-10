@@ -171,6 +171,11 @@ nnoremap <leader>vl :vs<cr>
 nmap <leader>d :bd<CR>
 nmap <leader>D :bufdo bd<CR>
 
+" mappings to edit/view files relative to current directory
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+
 " Saving and exit mappings
 nmap <leader>q :wqa!<CR>
 nmap <leader>sq :q<CR>
