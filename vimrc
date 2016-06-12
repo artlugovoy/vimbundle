@@ -209,6 +209,9 @@ nnoremap <leader>rr :A<CR>
 nnoremap <leader>rn :call RunNearestSpec()<CR>
 nnoremap <leader>rf :call RunCurrentSpecFile()<CR>
 
+" Edit vimrc bindings
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
 " Read custom configuration
 let home_path = expand("$HOME/")
 if filereadable(home_path . '.vimrc.local')
