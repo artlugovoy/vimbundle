@@ -28,6 +28,7 @@ Plugin 'benmills/vimux.git'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
 
 Plugin 'w0ng/vim-hybrid'
 
