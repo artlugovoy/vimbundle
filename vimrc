@@ -206,8 +206,12 @@ map <leader>nf :NERDTreeFind<cr>
 
 " Rspec binding
 nnoremap <leader>rr :A<CR>
-nnoremap <leader>rn :call RunNearestSpec()<CR>
-nnoremap <leader>rf :call RunCurrentSpecFile()<CR>
+nnoremap <leader>rn :call RunNearestSpec()<cr>
+nnoremap <leader>rf :call RunCurrentSpecFile()<cr>
+
+" Rubocop binding
+nnoremap <leader>rc :call VimuxRunCommand("rubocop")<cr>
+
 
 " Edit vimrc bindings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
