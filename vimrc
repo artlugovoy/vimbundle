@@ -143,6 +143,9 @@ let g:rspec_command = 'call VimuxRunCommand("rspec {spec}\n")'
 " Vimux plugin options
 let g:VimuxRunnerType = "window"
 
+" Vimdiff
+set diffopt+=vertical
+
 " Basic mappings
 imap jk <ESC>
 
@@ -210,8 +213,8 @@ nnoremap <leader>rn :call RunNearestSpec()<cr>
 nnoremap <leader>rf :call RunCurrentSpecFile()<cr>
 
 " Rubocop binding
-nnoremap <leader>rc :call VimuxRunCommand("rubocop")<cr>
-
+nnoremap <leader>rc :call VimuxRunCommand("rubocop ". expand('%:p'))<cr>
+nnoremap <leader>rC :call VimuxRunCommand("rubocop")<cr>
 
 " Edit vimrc bindings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
