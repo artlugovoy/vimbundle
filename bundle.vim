@@ -22,6 +22,8 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 
+Plugin 'elixir-lang/vim-elixir'
+
 Plugin 'thoughtbot/vim-rspec.git'
 Plugin 'benmills/vimux.git'
 
