@@ -204,17 +204,18 @@ map <leader>f :CtrlPMixed<cr>
 let g:ctrlp_map = '<Leader>f'
 
 " NERDTree plugin key bindings
-map <leader>n :NERDTreeToggle<cr>
+map <leader>n :NERDTreeToggle .<cr>
 map <leader>nf :NERDTreeFind<cr>
 
 " Rspec binding
 nnoremap <leader>rr :A<CR>
 nnoremap <leader>rn :call RunNearestSpec()<cr>
 nnoremap <leader>rf :call RunCurrentSpecFile()<cr>
+nnoremap <leader>ra :call RunAllSpecs()<cr>
 
 " Rubocop binding
 nnoremap <leader>rc :call VimuxRunCommand("rubocop ". expand('%:p'))<cr>
-nnoremap <leader>rC :call VimuxRunCommand("rubocop")<cr>
+nnoremap <leader>rca :call VimuxRunCommand("rubocop")<cr>
 
 " Edit vimrc bindings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
