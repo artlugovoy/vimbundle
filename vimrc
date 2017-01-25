@@ -217,6 +217,9 @@ nnoremap <leader>ra :call RunAllSpecs()<cr>
 nnoremap <leader>rc :call VimuxRunCommand("rubocop ". expand('%:p'))<cr>
 nnoremap <leader>rca :call VimuxRunCommand("rubocop")<cr>
 
+" Run ruby script
+nnoremap <leader>rs :call VimuxRunCommand("ruby ". expand('%:p'))<cr>
+
 " Edit vimrc bindings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
