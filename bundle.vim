@@ -26,6 +26,8 @@ Plugin 'slim-template/vim-slim'
 Plugin 'thoughtbot/vim-rspec.git'
 Plugin 'benmills/vimux.git'
 
+Plugin 'fatih/vim-go'
+
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
