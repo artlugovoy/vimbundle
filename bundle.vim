@@ -21,6 +21,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
+Plugin 'slim-template/vim-slim'
 
 Plugin 'elixir-lang/vim-elixir'
 
@@ -28,6 +29,7 @@ Plugin 'thoughtbot/vim-rspec.git'
 Plugin 'benmills/vimux.git'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
