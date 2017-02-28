@@ -182,6 +182,9 @@ map <leader>v :view %%
 " mapping to switch between last two buffers
 nnoremap <leader><leader> <c-^>
 
+" Macro to easily navigate from do to end blocks in Ruby
+runtime macros/matchit.vim
+
 " Saving and exit mappings
 nmap <leader>q :wqa!<CR>
 nmap <leader>sq :q<CR>
