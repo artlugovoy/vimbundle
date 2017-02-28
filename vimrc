@@ -237,7 +237,7 @@ autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost vimrc source %
 
 " Go Plugin mappings
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>rg <Plug>(go-run)
+au FileType go nmap <leader>rb <Plug>(go-build)
+au FileType go nmap <leader>rt <Plug>(go-test)
+au FileType go nmap <leader>rc <Plug>(go-coverage)
