@@ -39,6 +39,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 
 Plugin 'w0ng/vim-hybrid'
+Plugin 'trevordmiller/nova-vim'
 
 call vundle#end()
 filetype plugin indent on

@@ -45,7 +45,7 @@ set laststatus=2
 set relativenumber
 set undofile
 set t_Co=256
-colorscheme hybrid
+colorscheme nova
 set splitbelow splitright
 
 " Formatting
@@ -222,6 +222,9 @@ nnoremap <leader>rca :call VimuxRunCommand("rubocop")<cr>
 
 " Run ruby script
 nnoremap <leader>rs :call VimuxRunCommand("ruby ". expand('%:p'))<cr>
+
+" Run javascript code
+nnoremap <leader>rjs :!node %<cr>
 
 " Edit vimrc bindings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
