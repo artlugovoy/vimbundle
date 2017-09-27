@@ -22,6 +22,7 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'slim-template/vim-slim'
+Plugin 'mxw/vim-jsx'
 
 Plugin 'thoughtbot/vim-rspec.git'
 Plugin 'benmills/vimux.git'
