@@ -40,6 +40,7 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
 
 Plugin 'w0ng/vim-hybrid'
 Plugin 'trevordmiller/nova-vim'
