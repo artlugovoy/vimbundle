@@ -37,6 +37,7 @@ Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'tpope/vim-eunuch'
 
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
