@@ -79,6 +79,9 @@ set incsearch
 set showmatch
 set hlsearch
 
+" Enabe vim to read directory specific .vimrc
+set exrc
+
 " Set shell
 set shell=$SHELL
 
