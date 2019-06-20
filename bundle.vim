@@ -46,5 +46,7 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'trevordmiller/nova-vim'
 
+Plugin 'hashivim/vim-terraform'
+
 call vundle#end()
 filetype plugin indent on
