@@ -247,3 +247,6 @@ au FileType go nmap <leader>rg <Plug>(go-run)
 au FileType go nmap <leader>rb <Plug>(go-build)
 au FileType go nmap <leader>rt <Plug>(go-test)
 au FileType go nmap <leader>rc <Plug>(go-coverage)
+
+" Syntax highlighting
+au BufRead,BufNewFile *.hcl setfiletype terraform
