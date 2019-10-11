@@ -94,6 +94,8 @@ set statusline+=%m%r%h%w
 set statusline+=\ [%{strlen(&fenc)?&fenc:&enc}]
 " line x of y
 set statusline+=\ [line\ %l\/%L\ column\ %c]
+" Git conflicted
+set stl+=%{ConflictedVersion()}
 
 " Change colour of statusline in insert mode
 hi statusline ctermfg=Black ctermbg=White

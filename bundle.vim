@@ -30,6 +30,7 @@ Plugin 'benmills/vimux.git'
 Plugin 'fatih/vim-go'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'christoomey/vim-conflicted'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
