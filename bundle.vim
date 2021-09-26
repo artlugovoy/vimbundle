@@ -15,7 +15,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim.git'
 Plugin 'Townk/vim-autoclose'
 Plugin 'tpope/vim-endwise'
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
+
+Plugin 'stevearc/vim-arduino'
 
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rake'
@@ -23,11 +25,10 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'slim-template/vim-slim'
 Plugin 'mxw/vim-jsx'
+Plugin 'Chiel92/vim-autoformat'
 
 Plugin 'thoughtbot/vim-rspec.git'
 Plugin 'benmills/vimux.git'
-
-Plugin 'fatih/vim-go'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-conflicted'
@@ -46,9 +47,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 
 Plugin 'w0ng/vim-hybrid'
-Plugin 'trevordmiller/nova-vim'
-
-Plugin 'hashivim/vim-terraform'
+Plugin 'ghifarit53/tokyonight-vim'
 
 call vundle#end()
 filetype plugin indent on
