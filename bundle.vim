@@ -17,8 +17,6 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-syntastic/syntastic'
 
-Plugin 'stevearc/vim-arduino'
-
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
