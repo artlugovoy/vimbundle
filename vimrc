@@ -45,7 +45,7 @@ set laststatus=2
 set relativenumber
 set undofile
 set t_Co=256
-colorscheme nova
+colorscheme hybrid
 set splitbelow splitright
 
 " Formatting
@@ -54,8 +54,8 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set nowrap
-set textwidth=80
-autocmd FileType ruby setlocal colorcolumn=81
+set textwidth=100
+autocmd FileType ruby setlocal colorcolumn=101
 set formatoptions=n
 
 " Display whitespaces
@@ -109,6 +109,9 @@ set wildignore=.svn,CVS,.git,*.swp,*.jpg,*.png,*.gif,*.pdf,*.bak,*.orig
 " Set a lower priority for .old files
 set suffixes+=.old
 
+" Disable markdown folding
+let g:vim_markdown_folding_disabled = 1
+
 " Set sivler searcher as a grep tool
 set grepprg=ag\ --nogroup\ --nocolor
 let g:grep_cmd_opts = '--line-numbers --noheading'
@@ -127,6 +130,7 @@ let NERDTreeQuitOnOpen = 1
 let NERDTreeWinSize = 60 
 let NERDTreeChDirMode = 2
 let NERDTreeDirArrows = 1
+let NERDTreeQuitOnOpen = 0
 
 " AutoClose plugin options
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
@@ -174,6 +178,7 @@ nmap <leader>sj <C-w>j
 nmap <leader>sk <C-w>k
 nmap <leader>sl <C-w>l
 nnoremap <leader>vl :vs<cr>
+nnoremap <leader>rw :%s/\s\+$//e<cr>
 
 " buffer mappings
 nmap <leader>d :bd<CR>
