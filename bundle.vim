@@ -41,7 +41,7 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'brooth/far.vim'
 
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'preservim/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 
 Plugin 'w0ng/vim-hybrid'
