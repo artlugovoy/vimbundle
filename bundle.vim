@@ -42,7 +42,6 @@ Plugin 'brooth/far.vim'
 
 Plugin 'godlygeek/tabular'
 Plugin 'preservim/vim-markdown'
-Plugin 'suan/vim-instant-markdown'
 
 Plugin 'w0ng/vim-hybrid'
 Plugin 'ghifarit53/tokyonight-vim'
