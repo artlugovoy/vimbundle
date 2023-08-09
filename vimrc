@@ -146,6 +146,9 @@ let g:ctrlp_max_files = 0
 let g:ctrlp_extensions = ['ctrlp-filetpe']
 let g:ctrlp_follow_symlinks = 1
 
+" Disable codeium by default
+let g:codeium_enabled = v:false
+
 " Rspec plugin options
 let g:rspec_command = 'call VimuxRunCommand("rspec {spec}\n")'
 
@@ -257,3 +260,8 @@ au FileType go nmap <leader>rc <Plug>(go-coverage)
 
 " Syntax highlighting
 au BufRead,BufNewFile *.hcl setfiletype terraform
+
+" Codeium mappings
+map <leader>ce :CodeiumEnable<cr>
+map <leader>cd :CodeiumDisable<cr>
+

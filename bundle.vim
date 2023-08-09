@@ -25,6 +25,8 @@ Plugin 'slim-template/vim-slim'
 Plugin 'mxw/vim-jsx'
 Plugin 'Chiel92/vim-autoformat'
 
+Plugin 'Exafunction/codeium.vim'
+
 Plugin 'thoughtbot/vim-rspec.git'
 Plugin 'benmills/vimux.git'
 
